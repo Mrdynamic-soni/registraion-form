@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+</head>
+<body>
+    {{>navbar}}
+    <div class="container-fluname main_header">
+     <div class="row">
+         <div class="col-md-10 col-12 mx-auto">
+             <div class="row align-mnamedle">
+                 <!--LEFT BODY-->
+                 <div class="col-md-6 col-12 main_header_left left">
+                     <img class="img img-fluname img-responsive impad img-rounded btn" src="https://st2.depositphotos.com/1001599/43046/v/380/depositphotos_430460192-stock-illustration-sign-page-abstract-concept-vector.jpg?forcejpeg=true" class=" w-100" alt="Wild Landscape"/>
+                          
+                 </div>
+                   <!--RIGHT BODY-->
+                 <div class="col-md-6 col-12 main_header_right rounded right">
+                     <div class="text-center mt-5">
+                         <form  action="/signup" method="POST" style="max-width:360px; margin:auto;">
+                             <img class="mt-10 mb-10" src="https://cdn-icons-png.flaticon.com/512/295/295128.png" alt="login Logo" height="100">
+                             <h1 class="mt-10">Please SignUp</h1>
+
+                             {{!-- <label for="name" class="sr-only">name</label> --}}
+                             <input type="text" name="name" class="form-control mb-3" placeholder="Name*" required autofocus>
+
+                             {{!-- <label for="email" class="sr-only">Email Address</label> --}}
+                             <input type="text" name="email" class="form-control mb-3" placeholder="Email Address*" required autofocus>
+
+                             {{!-- <label for="Phone" class="sr-only">Phone Number</label> --}}
+                             <input type="text" name="phone" class="form-control mb-3" placeholder="Phone Number*" required autofocus>
+                             
+                             {{!-- <label for="gender" class="sr-only">Gender</label> --}}
+                             <input type="text" name="gender" class="form-control mb-3" placeholder="Gender*" required autofocus>
+
+                             {{!-- <label for="age" class="sr-only">Age</label> --}}
+                             <input type="text" name="age" class="form-control mb-3" placeholder="Age*" required autofocus>
+
+                             {{!-- <label for="Adress" class="sr-only">Address</label> --}}
+                             <input type="text" name="address" class="form-control mb-3" placeholder="Address*" required autofocus>
+
+                             <input type="password" name="password" class="form-control mb-3" placeholder="Password*" required autofocus>
+
+                             <input type="password" name="confirmpassword" class="form-control mb-3" placeholder="Confirm Password*" required autofocus>
+                              
+                             <button type="submit" class="btn btn-large btn-primary btn" value="signup">SignUp</button>
+                             
+                         </form>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+    {{>footer}}
+</body>
+</html>

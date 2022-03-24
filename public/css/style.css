@@ -1,0 +1,44 @@
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    margin-bottom: 60px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; 
+  /* Vertically center the text there */
+  background-color: #1350aa;
+}
+
+.left{
+    padding: 250px 20px 50px 20px;
+}
+
+.right{
+    padding: 50px 20px 100px 20px;
+}
+
+
+.left_home{
+    padding: 100px 20px 80px 20px;
+}
+
+.right_home{
+    padding: 200px 20px 100px 20px;
+}
+
+.btn{
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    box-shadow: 0 10px 6px -6px #000;
+}
