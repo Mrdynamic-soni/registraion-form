@@ -61,6 +61,25 @@ app.post("/signup", async (req,res)=>{
 app.get("/login",(req,res)=>{
     res.render("login");
 })
+
+//login part
+app.post("/login",async (req, res)=>{
+    try{
+        const email= req.body.email;
+        const pass = req.body.password;
+
+        const emailresult = await signup.findOne({email:email});
+        if(emailresult.password === pass){
+           res.status(201).render("index");
+        }else{
+            res.send("Email or password is not matching");
+        }
+
+    }catch(err){
+        res.status.send(err);
+    }
+})
+
 app.listen(port,()=>{
     console.log(`Server is up and running at localhost:${port}`);
 })
